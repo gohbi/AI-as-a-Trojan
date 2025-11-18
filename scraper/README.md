@@ -29,6 +29,21 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Quick Start
+
+The fastest way to get started:
+
+```bash
+cd scraper
+./quick_start.sh
+```
+
+This script will:
+- Check for Python installation
+- Install dependencies if needed
+- Run the scraper
+- Display results
+
 ### Basic Usage
 
 Run the scraper with default settings:
@@ -41,6 +56,20 @@ This will:
 - Search for 12 different AI-related terms
 - Query Hacker News and Reddit for each term
 - Save results to `scraped_content.json` and `SCRAPED_CONTENT.md`
+
+### Organizing Results
+
+After scraping, you can organize articles into the repository structure:
+
+```bash
+python organize_content.py
+```
+
+This will:
+- Read articles from `scraped_content.json`
+- Categorize them automatically
+- Create folder structures like `Microsoft/Article-Name/ReadMe.md`
+- Generate templates for you to fill in with summaries
 
 ### Output Files
 
